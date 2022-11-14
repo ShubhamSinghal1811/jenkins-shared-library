@@ -11,6 +11,9 @@ def call(var1,var2,ch){
     else if (ch == "*"){
         sh "echo ${var1} * ${var2} | bc"
     }
+    else{
+        sh "echo ${var1} / ${var2} | bc"
+    }
     // sh "echo ${var1} + ${var2} | bc"
     //sh "echo ${res}"
 }
