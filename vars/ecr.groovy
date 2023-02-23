@@ -1,11 +1,5 @@
 def call(){
-environment {
-AWS_ACCOUNT_ID="982923341761"
-AWS_DEFAULT_REGION="ap-south-1"
-IMAGE_REPO_NAME="demoappf311c80d/helloworldfunction19d43fc4repo"
-IMAGE_TAG="latest"
-REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
-}
+
   stages {
         
         stage('Logging into AWS ECR') {
